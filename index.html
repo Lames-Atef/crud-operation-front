@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/all.min.css" rel="stylesheet"/>
+   
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="w-75 bg-info m-auto p-5">
+    <label>product Name</label>
+    <input id="productName" type="text" class="form-control">
+    <div id="alertName" class="alert alert-danger p-1 m-2 d-none"><p>write name please</p></div>
+    <label>product Price</label>
+    <input id="productPrice" type="number" class="form-control">
+    <div id="alertPrice" class="alert alert-danger p-1 m-2 d-none"><p>write price please</p></div>
+
+    <label>product Category</label>
+    <input id="productCategory" type="text" class="form-control">
+    <div class="p-2 m-2 alert alert-danger d-none" id="alertCategory"><p>please enter category</p></div>
+    <label>product Desc</label>
+   <textarea id="productDesc" name="description" class="form-control" cols="5" rows="6"></textarea>
+<button disabled id="addProduct" class="btn btn-success float-end my-3 ">submit</button>
+<div class="clearfix"></div>
+<input type="text" class="form-control my-3" id="search" placeholder="search.....">
+<div>
+    
+    <table class="table">
+        <thead>
+            <th> Name</th>
+            <th> price</th>
+            <th> category</th>
+            <th> Description</th>
+            <th>delete</th>
+            <th>update</th>
+
+        </thead>
+       <tbody id="data">
+
+       </tbody>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
